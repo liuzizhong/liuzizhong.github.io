@@ -10,7 +10,7 @@
 
     <!--Description-->
     
-        <meta name="description" content="hasdbjasdhbvadfhbvdfbvdavbaddjfvbdifvbcvvgyuevfdbhvfjh">
+        <meta name="description" content="欢迎大家来到我的博客，这是我自己的经验积累，有可能会有错误，有错误欢迎留言！">
     
 
     <!--Author-->
@@ -25,7 +25,7 @@
 
     <!--Open Graph Description-->
     
-        <meta property="og:description" content="hasdbjasdhbvadfhbvdfbvdavbaddjfvbdifvbcvvgyuevfdbhvfjh">
+        <meta property="og:description" content="欢迎大家来到我的博客，这是我自己的经验积累，有可能会有错误，有错误欢迎留言！">
     
 
     <!--Open Graph Site Name-->
@@ -151,6 +151,56 @@
 
     <div class="post-header index">
         <h1 class="title">
+            <a href="/2018/12/11/新建文章/">
+                新建文章
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2018-12-11</span>
+            
+            
+            
+        </div>
+    </div>
+
+    
+        <div class="content">
+            <p>Shao Qing’s Bolg<br>认真生活，热爱生活。</p>
+<p>首页<br>分类<br>归档<br>关于<br>公益404<br>Mac上Hexo+Github 搭建属于自己的博客（下)<br>发表于 2017-02-14 |  分类于 教程 |  阅读次数: 16<br>字数统计: 906<br>前言<br>这是系列文章，接下来要对个人博客进行润色以及发布博文，可以看前一篇了解如何部署博客到GitHub上，事不宜迟动手吧~~</p>
+<p>主要步骤<br>给博客配上心仪的主题<br>给博客配置个人信息<br>发布博客<br>给博客配上心仪的主题<br>挑选博客主题<br>Hexo官方提供许多好看的主题，预览后发现有喜欢的主题可以拿来用了。<br>Theme</p>
+<p>启用主题<br>在Bolg目录文件下终端输入$ git clone <a href="https://github.com/iissnan/hexo-theme-next.git" target="_blank" rel="noopener">https://github.com/iissnan/hexo-theme-next.git</a> themes/next<br>这个命令的意思是把主题拷贝到Bolg下themes文件下，themes文件下是存放所有要使用的主题，最后由站点配置文件(根目录下_config.yml文件)决定使用哪个主题。<br>github Theme</p>
+<p>打开Bolg下_config.yml文件，修改theme: landscape为theme: next，前提是你已经下载完了next主题</p>
+<p>Paste_Image.png</p>
+<p>部署<br>终端执行$ hexo generate，编译后，会出现一个public文件夹，里面将所有的md文件编译成html文件及一些css，js，图片等文件<br>$ hexo server开启本地服务，可以在本地浏览器浏览博客，部署好后可以预览<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a><br>$ hexo deploy将本地博客部署到关联的github上，查看你的用户名.github.io<br>给博客配置个人信息(next主题)<br>可以参考next主题官方，也可以跟着我的步骤（下面）<br>站点主要配置项<br>打开Bolg下站点配置文件（_config.yml），修改下主要配置项<br>例如：language: zh-Hans 把语言设置汉语<br>Paste_Image.png</p>
+<p>主题主要配置项<br>Paste_Image.png</p>
+<p>添加侧边栏社交链接<br>先进行链接的设置</p>
+<h1 id="Social-links"><a href="#Social-links" class="headerlink" title="Social links"></a>Social links</h1><p>social:<br>GitHub: <a href="https://github.com/your-user-name" target="_blank" rel="noopener">https://github.com/your-user-name</a><br>Twitter: <a href="https://twitter.com/your-user-name" target="_blank" rel="noopener">https://twitter.com/your-user-name</a><br>微博: <a href="http://weibo.com/your-user-name" target="_blank" rel="noopener">http://weibo.com/your-user-name</a><br>豆瓣: <a href="http://douban.com/people/your-user-name" target="_blank" rel="noopener">http://douban.com/people/your-user-name</a><br>知乎: <a href="http://www.zhihu.com/people/your-user-name" target="_blank" rel="noopener">http://www.zhihu.com/people/your-user-name</a></p>
+<h1 id="等等"><a href="#等等" class="headerlink" title="等等"></a>等等</h1><p>然后是对应的图标</p>
+<h1 id="Social-Icons"><a href="#Social-Icons" class="headerlink" title="Social Icons"></a>Social Icons</h1><p>social_icons:<br>enable: true</p>
+<h1 id="Icon-Mappings"><a href="#Icon-Mappings" class="headerlink" title="Icon Mappings"></a>Icon Mappings</h1><p>GitHub: github<br>Twitter: twitter<br>微博: weibo<br>设定链接的图标，对应的字段是 social_icons。其键值格式是 匹配键: Font Awesome 图标名称， 匹配键 与上一步所配置的链接的 显示文本 相同（大小写严格匹配），图标名称 是 Font Awesome 图标的名字（不必带 fa- 前缀）。 enable 选项用于控制是否显示图标，你可以设置成 false 来去掉图标。<br>Paste_Image.png</p>
+<p>配置完后查看效果<br>终端进入Bolg下，输入$ Hexo g生成静态页面,接着输入$ Hexo s开启本地服务，先在本地看看效果<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a><br>最后部署到github上，终端输入hexo deploy<br>发布博客<br>一篇博客在本地存为一个文件，新建一篇博客，名为“2017 时不我待”<br>终端进入Bolg目录下，输入hexo new post “2017 时不我待”，接着我们会在Bolg\source\ _posts下看到刚刚新建的2017-时不我待.md文件了<br>Paste_Image.png</p>
+<p>编辑博客并提交<br>编辑博客建议使用Markdown语法，可参考献给写作者的 Markdown 新手指南，完成博客后部署到github上。<br>终端进入Bolg下，输入$ Hexo g生成静态页面,接着输入$ Hexo s开启本地服务，先在本地看看效果<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a><br>最后部署到github上，终端输入hexo deploy<br>总结<br>网上有许多参考资料，很值得一看，给出链接：<br>Hexo+github博客搭建记录<br>hexo边搭边记<br>Next主题使用文档<br>使用Hexo和GitHub Pages搭建免费独立博客<br>手把手教你用Hexo+Github 搭建属于自己的博客</p>
+<p>————-本文结束  感谢您的阅读————-<br>Mac上Hexo+Github 搭建属于自己的博客（中)<br>点滴<br>文章目录  站点概览</p>
+<ol>
+<li>前言</li>
+<li>主要步骤</li>
+<li>给博客配上心仪的主题</li>
+<li>给博客配置个人信息(next主题)</li>
+<li>发布博客</li>
+<li>总结<br>© 2018  绍清<br>由 Hexo 强力驱动 | 主题 — NexT.Pisces v5.1.4  博客全站共10.9k字</li>
+</ol>
+
+        </div>
+    
+
+</div>
+            
+                
+<div class="post">
+
+    <div class="post-header index">
+        <h1 class="title">
             <a href="/2018/11/23/这是一篇新文章，测试测试/">
                 这是一篇新文章，测试测试.
             </a>
@@ -236,6 +286,10 @@
         <ul>
             
             <li>
+                <a class="footer-post" href="/2018/12/11/新建文章/">新建文章</a>
+            </li>
+            
+            <li>
                 <a class="footer-post" href="/2018/11/23/这是一篇新文章，测试测试/">这是一篇新文章，测试测试.</a>
             </li>
             
@@ -255,7 +309,7 @@
                 <ul class="list-inline footer-social-icons">
                     
                     <li class="list-inline-item">
-                        <a href="https://github.com/klugjo/hexo-theme-alpha-dust">
+                        <a href="https://github.com/liuzizhong">
                             <span class="footer-icon-container">
                                 <i class="fa fa-github"></i>
                             </span>
@@ -273,7 +327,7 @@
                     
                     
                     <li class="list-inline-item">
-                        <a href="https://www.facebook.com/">
+                        <a href="https://www.facebook.com/profile.php?id=100011783704967">
                             <span class="footer-icon-container">
                                 <i class="fa fa-facebook"></i>
                             </span>
